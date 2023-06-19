@@ -1,29 +1,28 @@
 class Person
-  def initialize(age, name = "Unknown", parent_permission = true)
-    @id = Random.rand(1..100000)
+  def initialize(age, name = 'Unknown', parent_permission: true)
+    @id = Random.rand(1..100_000)
     @name = name
     @age = age
     @parent_permission = parent_permission
   end
 
-  def getId
+  def get_id
     @id
   end
 
-  def getName
+  def get_name
     @name
   end
 
-  def getAge
+  def get_age
     @age
   end
 
-
-  def setName=(value)
+  def set_name=(value)
     @name = value
   end
 
-  def setAge=(value)
+  def set_age=(value)
     @age = value
   end
 
