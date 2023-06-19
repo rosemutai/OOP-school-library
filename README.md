@@ -115,11 +115,6 @@ Example:
 - Twitter: [@\_\_chepngetich](https://twitter.com/__chepngetich)
 - LinkedIn: [@rosemutai](https://linkedin.com/in/rosemutai)
 
-👤 **Fatihah Oduwole**
-
-- GitHub: [@rosemutai](https://github.com/jeddaa)
-- Twitter: [@\_\_chepngetich](https://twitter.com/_jeddaah)
-- LinkedIn: [@rosemutai](https://linkedin.com/in/fatihahoduwole)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
