@@ -6,23 +6,23 @@ class Person
     @parent_permission = parent_permission
   end
 
-  def get_id
+  def id
     @id
   end
 
-  def get_name
+  def name
     @name
   end
 
-  def get_age
+  def age
     @age
   end
 
-  def set_name=(value)
+  def name=(value)
     @name = value
   end
 
-  def set_age=(value)
+  def age=(value)
     @age = value
   end
 
@@ -35,5 +35,4 @@ class Person
   def of_age?
     age >= 18
   end
-
 end
