@@ -75,7 +75,7 @@ class App
       new_student = Student.new(age, name, parent_permission)
       @persons.push(new_student)
       puts 'Person created successfully'
-    
+
     when 2
       print 'Specialization: '
       specialization = gets.chomp
@@ -102,7 +102,7 @@ class App
       puts "Currently there are no books"
     elsif @persons.empty?
       puts "Currently there are no users"
-    else 
+    else
       puts 'Select a book from the following list by its index: '
       @books.each_with_index do |book, index|
         puts "#{index}: Title: #{book.title}, Author: #{book.author}"
@@ -120,12 +120,12 @@ class App
     end
   end
 
-def list_all_rentals
-  puts 'Enter person ID: '
-  person_id = gets.to_i
-  puts 'Rentals: '
-  @rentals.each do |rental|
-    puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+  def list_all_rentals
+    puts 'Enter person ID: '
+    person_id = gets.to_i
+    puts 'Rentals: '
+    @rentals.each do |rental|
+      puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+    end
   end
-end
 end
