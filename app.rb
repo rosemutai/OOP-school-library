@@ -125,8 +125,8 @@ class App
     person_id = gets.to_i
     puts 'Rentals: '
     @rentals.each do |rental|
-      puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
       if rental.person.id == person_id
-    end
+        puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"  
+      end
   end
 end
