@@ -29,6 +29,7 @@ class App
     end
   end
 
+  # rubocop:disable Metrics/CyclomaticComplexity
   def users_choice(chosen_option)
     case chosen_option
     when 1
@@ -60,6 +61,7 @@ class App
     end
   end
 
+  # rubocop:disable Metrics/MethodLength
   def create_a_person
     print 'Do you want to create a student (1) or a teacher (2)? [input the number]: '
     student_or_teacher = gets.chomp.to_i
@@ -126,7 +128,7 @@ class App
     puts 'Rentals: '
     @rentals.each do |rental|
       if rental.person.id == person_id
-        puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"  
+        puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
       end
     end
   end
