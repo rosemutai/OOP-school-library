@@ -60,6 +60,7 @@ class App
       puts "Name: #{person.name}, Age:#{person.age}"
     end
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 
   # rubocop:disable Metrics/MethodLength
   def create_a_person
@@ -88,6 +89,7 @@ class App
       puts 'No such option, please try again'
     end
   end
+  # rubocop:enable Metrics/MethodLength
 
   def create_a_book
     puts 'Title: '
