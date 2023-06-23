@@ -83,7 +83,7 @@ class App
       @persons.push(new_teacher)
       puts 'Person created successfully'
     else
-      puts "No such option, please try again"
+      puts 'No such option, please try again'
     end
   end
 
@@ -94,14 +94,14 @@ class App
     author = gets.chomp
     new_book = Book.new(title, author)
     @books.push(new_book)
-    puts "Book created successfully"
+    puts 'Book created successfully'
   end
 
   def create_a_rental
     if @books.empty?
-      puts "Currently there are no books"
+      puts 'Currently there are no books'
     elsif @persons.empty?
-      puts "Currently there are no users"
+      puts 'Currently there are no users'
     else
       puts 'Select a book from the following list by its index: '
       @books.each_with_index do |book, index|
@@ -116,7 +116,7 @@ class App
       print 'Date: '
       date = gets.chomp
       @rentals.push(Rental.new(date, @books[book_rented], @persons[person_that_rented_book]))
-      puts "Rentals created successfully"
+      puts 'Rentals created successfully'
     end
   end
 
@@ -125,7 +125,8 @@ class App
     person_id = gets.to_i
     puts 'Rentals: '
     @rentals.each do |rental|
-      puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+      puts "Date Rented: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
+      if rental.person.id == person_id
     end
   end
 end
